@@ -86,7 +86,7 @@ function App() {
 
               <img className='container_img' src={getWeatherIconUrl(weatherData.weather[0].main)} width="180px" alt="Weather Icon"></img>
               <h2 className='container_degree'>{weatherData.main.temp}</h2>
-              <h2 className='country_per'>{weatherData.weather[0].main}</h2>
+              <h2 className='country_per'>{weatherData.weather[0].description}</h2>
 
               <form className='form' onSubmit={handleSubmit}>
                 <input type='text' className='input' placeholder='Enter city name' value={city} onChange={handleInputChange} required></input>
